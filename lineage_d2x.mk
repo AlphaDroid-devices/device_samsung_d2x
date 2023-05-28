@@ -31,6 +31,26 @@ TARGET_HAVE_SPEN := true
 ## Inherit from d2x device
 $(call inherit-product, device/samsung/d2x/device.mk)
 
+WITH_GAPPS := 0
+# Valid for core/full GAPPS (default=true)
+TARGET_USE_GOOGLE_TELEPHONY := false
+
+# Alpha internal properties
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_MATLOG := false
+TARGET_USE_PIXEL_LAUNCHER := false
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+ALPHA_MAINTAINER := Mgm2023
+ALPHA_BUILD_TYPE := Unofficial
+
+# Enable extra UDFPS animations
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Set Boot Animination Resolution
+TARGET_BOOT_ANIMATION_RES := 1440
+
 ## Boot Animation
 TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 3040
