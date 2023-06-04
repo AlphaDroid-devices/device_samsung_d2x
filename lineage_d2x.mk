@@ -31,6 +31,8 @@ TARGET_HAVE_SPEN := true
 ## Inherit from d2x device
 $(call inherit-product, device/samsung/d2x/device.mk)
 
+$(call inherit-product, device/samsung/exynos9820-common/v4afx/config.mk)
+
 WITH_GAPPS := 0
 # Valid for core/full GAPPS (default=true)
 TARGET_USE_GOOGLE_TELEPHONY := false
